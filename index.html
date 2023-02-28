@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        </style>
+    </head>
+
+    <body>
+
+        <!--ÁREA DO CABEÇALHO-->
+        <header class="cabecalho-geral">
+            <div class="cabecalho">
+                <img class="logo" src="imagens/logo.png" alt="logo">
+                <h1 class="titulo">Controle Financeiro</h1>
+                <div class="menu">
+                    <img class="menu-barra" src="imagens/menu.png" alt="menu">
+                    <nav class="links">
+                        <a class="menu-fechar" href="javascript:void(0)">X</a>
+                        <a href="javascript:void(0)">Cadastrar Transação</a>
+                        <span>|</span>
+                        <a href="javascript:void(0)">Limpar dados</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main><!--ÁREA DO CONTEÚDO-->
+            <div>
+            <form class="form"> <!--FORMULÁRIO-->
+                <span><b>Tipos de Transação:</b></span> <br>
+                <select class="caixa" name="Transação">
+                <option value=""></option>    
+                <option value="compra">Compra</option>
+                <option value="venda">Venda</option>
+                </select><br><br>
+    
+                <span><b>Nome Da Mercadoria:</b></span> <br>
+                <input class="caixa" type="text" placeholder="input"><br><br>
+    
+                <span><b>Valor:</b></span> <br>
+                <input class="caixa" type="text" placeholder="R$ 0,00"><br><br>
+    
+                <input class="bottom" type="submit" value="Adicionar Transação">
+                <br><br>
+            </form>
+            </div>
+        <hr class="linha">
+
+            <div class="lista-geral"> <!--LISTA DE TRANSAÇÕES-->
+                <div>
+                <h4 style="text-align: center;">Extrato de Transações</h4>
+                <table class="tabela" style="border":0>
+                    <tr>
+                        <th>Mercadoria</th>
+                        <th>Valor</th>
+                    </tr>
+                        
+                    <tr>
+                        <td> + Lorem ipsum dolor sit amet consectetur</td>
+                        <td>R$ 12.999,99</td>
+                    </tr>
+                
+                    <tr>
+                        <td> - Quis nostrud exercitation</td>
+                        <td>R$ 99,99</td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="border-bottom: double #e0e0e0;"> + Lorem ipsum</td>
+                        <td style="border-bottom: double #e0e0e0;">R$ 9,99</td>
+                    </tr>
+
+                    <tr>
+                        <td style=" border-bottom: none;"><b>Total</b></td>
+                        <td style=" border-bottom: none;"><b>R$ 12.909,99 <span class="lucro">[LUCRO]</span></td></b>
+                    </tr>
+                </div>    
+                </table>
+            </div>    
+        </main>
+
+    </body>
+
+</html>
