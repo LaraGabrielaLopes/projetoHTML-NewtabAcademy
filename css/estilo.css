@@ -4,6 +4,13 @@ body {
     font-family: "lato", sans-serif;
 }
 
+.main {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 411px;     
+}
+
 .cabecalho-geral {
     display: flex;
     justify-content: center;
@@ -78,19 +85,21 @@ body {
     text-align: left;
 }
 
+.span {
+    display: none;
+}
+
 .form {
     font-size: 14px;
     line-height: 22px;
-    float: left;
     display: block;
     margin: 25px;
     margin-left: 20px;
     padding: 0 10px;
     width: 400px;
-
 }
 
-.caixa {
+.caixa, .caixa-mercadoria {
     width: 371px;
     height: 32px;
     border: 1px solid #979797;
@@ -105,10 +114,6 @@ body {
     border-radius: 4px
 }
 
-.linha {
-    width: 371px;
-    color: #979797;
-}
 
 .lista-geral {
     font-size: 14px;
@@ -141,7 +146,6 @@ table {
     .links {
         display: flex;
         flex-direction: row;
-        position: fixed;
         width: 350px;
         top: 10px;      
         justify-content: center;
@@ -159,4 +163,48 @@ table {
     .links a.menu-fechar {
         display: none;
     }
+
+    .main {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 780px;
+    }
+
+    
+
+
+    
+    .form {
+        border: 1px solid #e0e0e0;
+        width: 728px;
+        height: 189px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+
+    .caixa {
+        width: 150px;
+        height: 32px;
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+
+    .caixa-mercadoria {
+        width: 348px;
+        height: 32px;
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+
+    .bottom {
+        width: 200px;
+        height: 32px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:baseline;
+        text-align: center;
+    }
+
 }

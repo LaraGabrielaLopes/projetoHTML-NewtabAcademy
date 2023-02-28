@@ -13,7 +13,7 @@
     </head>
 
     <body>
-
+        
         <!--ÁREA DO CABEÇALHO-->
         <header class="cabecalho-geral">
             <div class="cabecalho">
@@ -31,32 +31,34 @@
             </div>
         </header>
 
-        <main><!--ÁREA DO CONTEÚDO-->
-            <div>
-            <form class="form"> <!--FORMULÁRIO-->
-                <span><b>Tipos de Transação:</b></span> <br>
-                <select class="caixa" name="Transação">
-                <option value=""></option>    
-                <option value="compra">Compra</option>
-                <option value="venda">Venda</option>
-                </select><br><br>
-    
-                <span><b>Nome Da Mercadoria:</b></span> <br>
-                <input class="caixa" type="text" placeholder="input"><br><br>
-    
-                <span><b>Valor:</b></span> <br>
-                <input class="caixa" type="text" placeholder="R$ 0,00"><br><br>
-    
-                <input class="bottom" type="submit" value="Adicionar Transação">
-                <br><br>
-            </form>
-            </div>
-        <hr class="linha">
+        <main class="main"><!--ÁREA DO CONTEÚDO-->
 
+                <form class="form"> <!--FORMULÁRIO-->
+                    <div>
+                        <b>Tipos de Transação:</b> <br>
+                        <select class="caixa" name="Transação">
+                        <option value=""></option>    
+                        <option value="compra">Compra</option>
+                        <option value="venda">Venda</option>
+                        </select><br><br>
+                    </div>
+                    <div>
+                        <b>Nome Da Mercadoria:</b> <br>
+                        <input class="caixa-mercadoria" type="text" placeholder="input"><br><br>
+                    </div>
+                    <div>
+                        <b>Valor:</b> <br>
+                        <input class="caixa" type="text" placeholder="R$ 0,00"><br><br>
+                    </div>
+                    <input class="bottom" type="submit" value="Adicionar Transação">
+                    <br><br>
+                </form>     
+
+                
             <div class="lista-geral"> <!--LISTA DE TRANSAÇÕES-->
                 <div>
                 <h4 style="text-align: center;">Extrato de Transações</h4>
-                <table class="tabela" style="border":0>
+                <table class="tabela" style="border: 0;">
                     <tr>
                         <th>Mercadoria</th>
                         <th>Valor</th>
@@ -85,7 +87,7 @@
                 </table>
             </div>    
         </main>
-
+        
     </body>
 
 </html>
