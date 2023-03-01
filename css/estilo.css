@@ -101,6 +101,10 @@ body {
     width: 400px;
 }
 
+.titulo-form {
+    display: none;
+}
+
 .caixa, .caixa-mercadoria {
     width: 371px;
     height: 32px;
@@ -161,7 +165,10 @@ body {
 
 /*ÁREA MEDIA - RESPONSIVIDADE*/
 
-@media screen and (min-width: 700px) { 
+@media screen and (min-width: 700px) {  /*TABLET*/
+
+    /*--ÁREA CABEÇALHO*/
+    
     .titulo {
         text-align: left;
     }
@@ -191,22 +198,40 @@ body {
         display: none;
     }
 
+    /*BODY*/
+
     .main {
         position: relative;
         margin-left: auto;
         margin-right: auto;
         width: 780px;
     }
-    
+
+    /*ÁREA DO FORMULÁRIO NOVA TRANSAÇÃO*/
+
     .form {
-        border: 1px solid #e0e0e0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         width: 728px;
         height: 189px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
+        border: 1px solid #979797;
+        border-radius: 4px;
+        padding: 10px;
     }
 
+    .titulo-form {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .campos {
+        display: flex;
+    }
+
+      
     .caixa {
         width: 150px;
         height: 32px;
@@ -221,6 +246,10 @@ body {
         border-radius: 4px;
     }
 
+    .campo-und {
+        padding: 10px;
+    }
+
     .bottom {
         width: 200px;
         height: 32px;
@@ -229,6 +258,8 @@ body {
         justify-content:baseline;
         text-align: center;
     }
+
+    /*ÁREA DA TABELA EXTRATO DE TRANSAÇÕES*/
 
     .tabela {
         width: 728px;
@@ -243,7 +274,9 @@ body {
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {/*DESKTOP*/
+
+    /*ÁREA DO FORMULÁRIO NOVA TRANSAÇÃO*/
 
     .tabela {
         width: 900px;
@@ -255,4 +288,6 @@ body {
         display: flex;
         flex-direction: column;
     }
+
+    /*ÁREA DA TABELA EXTRATO DE TRANSAÇÕES*/
 }

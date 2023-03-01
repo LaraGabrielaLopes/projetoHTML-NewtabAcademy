@@ -33,26 +33,29 @@
 
         <main class="main"><!--ÁREA DO CONTEÚDO-->
 
-                <form class="form"> <!--FORMULÁRIO-->
-                    <div>
-                        <b>Tipos de Transação:</b> <br>
-                        <select class="caixa" name="Transação">
-                        <option value=""></option>    
-                        <option value="compra">Compra</option>
-                        <option value="venda">Venda</option>
-                        </select><br><br>
+               <form class="form"> <!--FORMULÁRIO-->
+                    <div class="titulo-form">Nova Transação</div>
+                    <div class="campos">
+                        <div class="campo-und">
+                            <label><b>Tipos de Transação:</b></label>
+                            <select class="caixa" name="Transação">
+                            <option value=""></option>    
+                            <option value="compra">Compra</option>
+                            <option value="venda">Venda</option>
+                            </select><br><br>
+                        </div>
+                        <div class="campo-und">
+                            <label><b>Nome Da Mercadoria:</b></label> <br>
+                            <input class="caixa-mercadoria" type="text" placeholder="input"><br><br>
+                        </div>
+                        <div class="campo-und">
+                            <label><b>Valor:</b></label> <br>
+                            <input class="caixa" type="text" placeholder="R$ 0,00"><br><br>
+                        </div>
+                        <button class="bottom">Adicionar Transação</button>
+                        <br><br>
                     </div>
-                    <div>
-                        <b>Nome Da Mercadoria:</b> <br>
-                        <input class="caixa-mercadoria" type="text" placeholder="input"><br><br>
-                    </div>
-                    <div>
-                        <b>Valor:</b> <br>
-                        <input class="caixa" type="text" placeholder="R$ 0,00"><br><br>
-                    </div>
-                    <input class="bottom" type="submit" value="Adicionar Transação">
-                    <br><br>
-                </form>     
+                </form>      
 
                 
             <div class="tabela-wrapper"> <!--LISTA DE TRANSAÇÕES-->
