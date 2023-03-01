@@ -89,6 +89,8 @@ body {
     display: none;
 }
 
+/*ÁREA DO FORMULÁRIO NOVA TRANSAÇÃO*/
+
 .form {
     font-size: 14px;
     line-height: 22px;
@@ -114,31 +116,52 @@ body {
     border-radius: 4px
 }
 
+/*ÁREA DA TABELA EXTRATO DE TRANSAÇÕES*/
+
 
 .tabela-wrapper {
     display: flex;
     justify-content:center;
+}
+
+.tabela {
     width: 100%;
 }
 
-.tabela td {
+.tabela th {
+    text-align: left;
+}
+
+.tabela tbody td, .tabela th {
     border-bottom: 1px solid #e0e0e0;
     padding: 5px;
 }
 
-.tabela tr {
-    border-bottom: 1px solid #e0e0e0;
-    text-align: left;
+.tabela tfoot td {
+    position: relative;
+    padding-top: 5px;
+    font-weight: bold;
 }
-   
 
-table {
-    border-color: #e0e0e0;
-  }
+.tabela tfoot td::before {
+    position:absolute;
+    width: 100%;
+    content: '';
+    top: 3px;
+    font-weight: bold;
+    border-top: 1px solid #e0e0e0;
+}
 
-/*ESTILO DO CABEÇALHO COMPLETO - COMEÇAR ESTILO DO FORMULÁRIO*/
+.lucro {
+    font-weight: normal;
+    font-size: 10px;
+    display: flex;
+    flex-direction:row-reverse;
+}
 
-@media screen and (min-width: 700px) { /*ÁREA MEDIA*/
+/*ÁREA MEDIA - RESPONSIVIDADE*/
+
+@media screen and (min-width: 700px) { 
     .titulo {
         text-align: left;
     }
@@ -174,10 +197,6 @@ table {
         margin-right: auto;
         width: 780px;
     }
-
-    
-
-
     
     .form {
         border: 1px solid #e0e0e0;
@@ -211,4 +230,29 @@ table {
         text-align: center;
     }
 
+    .tabela {
+        width: 728px;
+    }
+
+    .lucro {
+        font-weight: normal;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .tabela {
+        width: 900px;
+    }
+
+    .lucro {
+        font-weight: normal;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
 }
