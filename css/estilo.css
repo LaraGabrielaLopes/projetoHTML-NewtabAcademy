@@ -117,8 +117,8 @@ body {
 
 .tabela-wrapper {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content:center;
+    width: 100%;
 }
 
 .tabela td {
