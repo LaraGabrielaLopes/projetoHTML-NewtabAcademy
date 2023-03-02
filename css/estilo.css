@@ -165,38 +165,7 @@ body {
 
 /*ÁREA MEDIA - RESPONSIVIDADE*/
 
-@media screen and (min-width: 700px) {  /*TABLET*/
-
-    /*--ÁREA CABEÇALHO*/
-    
-    .titulo {
-        text-align: left;
-    }
-
-    .menu .menu-barra {
-        display: none;
-    }
-
-    .links {
-        display: flex;
-        flex-direction: row;
-        width: 350px;
-        top: 10px;      
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        background-color: #fff;
-    }
-
-    .links a {
-        color: #333;
-        width: initial;
-        height: initial;
-    }
-
-    .links a.menu-fechar {
-        display: none;
-    }
+@media screen and (min-width: 700px) {  /*TABLET PORTRAIT*/
 
     /*BODY*/
 
@@ -257,53 +226,6 @@ body {
        
     }
 
-
-    
-
-    /*.form {
-        display: flex;   
-        flex-direction: column;
-        width: 728px;
-        height: 189px;
-        border: 1px solid #979797;
-        border-radius: 4px;
-        padding: 10px;
-    }
-
-    .titulo-form {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .campos {
-        display: flex;
-    }
-
-      
-    .caixa {
-        width: 150px;
-        height: 32px;
-        border: 1px solid #979797;
-        border-radius: 4px;
-    }
-
-    .caixa-mercadoria {
-        width: 348px;
-        height: 32px;
-        border: 1px solid #979797;
-        border-radius: 4px;
-    }
-
-    .campo-und {
-        padding: 10px;
-    }
-
-    .button {
-        
-    }*/
-
     /*ÁREA DA TABELA EXTRATO DE TRANSAÇÕES*/
 
     .tabela {
@@ -319,12 +241,101 @@ body {
 
 }
 
-@media screen and (min-width: 1000px) {/*DESKTOP*/
+@media screen and (min-width: 1112px) /*TABLET LANDSCAPE*/ {
+
+    /*ÁREA DO FORMULÁRIO*/
+
+    main {
+        width: 1000px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form {
+        border: 1px solid #979797;        
+        display: block;
+        width: 378px;
+        height: 378px;
+        float: left;
+    }
+
+    .campos {
+        display: block;
+    }
+    
+    .caixa, .caixa-mercadoria {
+        width: 370px;
+        height: 32px;
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+    
+    .button {
+        width: 370px;
+        height: 32px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 4px
+    }
+
+    /*ÁREA DA TABELA*/
+
+    .tabela {
+        width: 652px;
+    }
+
+}
+
+@media screen and (min-width: 1112px) {/*DESKTOP*/
+
+    .main {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1112px;
+    }
+
+    /*ÁREA DO CABECALHO*/
+
+    .cabecalho {
+        width: 100%;
+        height: 80px;
+    }
+
+    .titulo {
+        text-align: left;
+    }
+
+    .menu .menu-barra {
+        display: none;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        top: 10px;  
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: #fff;
+    }
+
+    .links a {
+        color: #333;
+        width: initial;
+        height: initial;
+    }
+
+    .links a.menu-fechar {
+        display: none;
+    }
 
     /*ÁREA DO FORMULÁRIO NOVA TRANSAÇÃO*/
 
     .tabela {
-        width: 900px;
+        width: 652px;
     }
 
     .lucro {
@@ -334,5 +345,4 @@ body {
         flex-direction: column;
     }
 
-    /*ÁREA DA TABELA EXTRATO DE TRANSAÇÕES*/
 }
