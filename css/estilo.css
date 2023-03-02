@@ -112,7 +112,7 @@ body {
     border-radius: 4px;
 }
 
-.bottom {
+.button {
     width: 371px;
     height: 32px;
     background-color: #333;
@@ -209,9 +209,59 @@ body {
 
     /*ÁREA DO FORMULÁRIO NOVA TRANSAÇÃO*/
 
-    .form {
+    .form {       
+        display: flex;
+        flex-direction: column;
+        width: 728px;
+        border: 1px solid #979797;
+        border-radius: 4px;
+        padding: 10px;
+        align-items: flex-end;
+    }
+
+    .titulo-form {
         display: flex;
         justify-content: center;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .campos {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .caixa {
+        display: flex;
+        width: 150px;
+        height: 32px;
+        border: 1px solid #979797;
+        border-radius: 4px;      
+    }
+
+    .caixa-mercadoria {
+        display: flex;
+        width: 348px;
+        height: 32px;
+        border: 1px solid #979797;
+        border-radius: 4px;
+    }
+
+    .button {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
+    
+
+    /*.form {
+        display: flex;   
         flex-direction: column;
         width: 728px;
         height: 189px;
@@ -250,14 +300,9 @@ body {
         padding: 10px;
     }
 
-    .bottom {
-        width: 200px;
-        height: 32px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content:baseline;
-        text-align: center;
-    }
+    .button {
+        
+    }*/
 
     /*ÁREA DA TABELA EXTRATO DE TRANSAÇÕES*/
 
