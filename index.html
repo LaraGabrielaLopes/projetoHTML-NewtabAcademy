@@ -4,12 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/estilo.css"> 
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-        
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-        </style>
+        <link rel="stylesheet" href="css/estilo.css">
     </head>
 
     <body>
@@ -36,34 +31,33 @@
                <form class="form"> <!--FORMULÁRIO-->
                     <div class="titulo-form">Nova Transação</div>
                     <div class="campos">
-                        <div class="campo-und">
-                            <label><b>Tipos de Transação:</b></label>
+                        <div>
+                            <label>Tipos de Transação:</label>
                             <select class="caixa" name="Transação">
                             <option value=""></option>    
                             <option value="compra">Compra</option>
                             <option value="venda">Venda</option>
-                            </select><br><br>
+                            </select>
                         </div>
 
-                        <div class="campo-und">
-                            <label><b>Nome Da Mercadoria:</b></label> <br>
-                            <input class="caixa-mercadoria" type="text" placeholder="input"><br><br>
+                        <div>
+                            <label>Nome Da Mercadoria:</label> <br>
+                            <input class="caixa-mercadoria" type="text" placeholder="input">
                         </div>
 
-                        <div class="campo-und">
-                            <label><b>Valor:</b></label> <br>
-                            <input class="caixa" type="text" placeholder="R$ 0,00"><br><br>
-                        </div>
+                        <div>
+                            <label>Valor:</label> <br>
+                            <input class="caixa" type="text" placeholder="R$ 0,00">
+                        </div>                         
                     </div>
-                        <button class="button">Adicionar Transação</button>
-                        <br><br>
-                    
+                    <div class="botao-posicao">
+                    <button class="botao">Adicionar Transação</button>
+                    </div>                                           
                 </form>      
 
                 
             <div class="tabela-wrapper"> <!--LISTA DE TRANSAÇÕES-->
-                <div>
-                    <h4 style="text-align: center;">Extrato de Transações</h4>
+                    <div class="tabela-titulo">Extrato de Transações</div>
                     <table class="tabela" cellspacing="0">
                         <thead>
                             <tr>
@@ -101,8 +95,7 @@
                             </tr>
                         </tfoot>
 
-                    </table>  
-                </div>    
+                    </table> 
                 
             </div>    
         </main>
